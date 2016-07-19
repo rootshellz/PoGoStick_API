@@ -22,7 +22,7 @@ Pokémon GO API in Python
 
 
 # Requirements:
-- [ ] Python 2.7 (on Windows, Linux, or OSX - all others: YMMV)
+- Python 2.7 (on Windows, Linux, or OSX - all others: YMMV)
 
 
 # Credits:
