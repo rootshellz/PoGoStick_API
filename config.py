@@ -1,6 +1,6 @@
 #######################
 # Manual Configuration:
-debug = True
+debug = False
 
 use_proxy = False
 proxies = {
