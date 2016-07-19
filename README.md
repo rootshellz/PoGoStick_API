@@ -2,12 +2,12 @@
 Pokémon GO API in Python
 
 # Working Features:
-- [ ]
+- Login with Pokemon Trainer or Google account
 
 
 # To-Do:
-- [ ] Login with Pokemon Trainer account
-- [ ] Login with Google
+- [X] Login with Pokemon Trainer account
+- [X] Login with Google
 - [ ] Retrieve and enumerate profile
 - [ ] Run to arbitrary locations
 - [ ] Catch Pokemon
