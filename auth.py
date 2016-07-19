@@ -29,7 +29,8 @@ def authenticate(username, password, auth_type):
         access_token = auth_with_ptc(username, password)
 
     if access_token:
-        print("[.] Successfully logged in with your %s account\n" % auth_type)
+        print("[.] Successfully logged in with your %s account" % auth_type)
+        config.account_type = auth_type.lower()
         return access_token
     else:
         print("[*] Could not log in with %s account: %s.  Check username and password.\n" % (auth_type, username))
@@ -132,7 +133,9 @@ def auth_with_google(username, password):
         access_token = jdata['id_token']
         return access_token
 
-    except:
+    except Exception as error:
+        if config.debug:
+            print("[+] Failed Google Auth:", error)
         return None
 
 
@@ -164,5 +167,7 @@ def auth_with_ptc(username, password):
         access_token = re.sub('.com.*', '.com', raw_token)
         return access_token
 
-    except:
+    except Exception as error:
+        if config.debug:
+            print("[+] Failed Pokemon Trainer Club Auth:", error)
         return None

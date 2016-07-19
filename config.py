@@ -1,4 +1,6 @@
-debug = False
+#######################
+# Manual Configuration:
+debug = True
 
 use_proxy = False
 proxies = {
@@ -14,3 +16,12 @@ mobile_UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_2 like Mac OS X) AppleWebKit
 ## 'Mozilla/5.0 (iPad; CPU OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H143'})
 # Android Sample
 ## ?
+
+# Set client User Agent
+client_UA = "Niantic App"
+
+
+#####################################
+# Updated by API (leave at defaults):
+account_type = None
+api_endpoint = None

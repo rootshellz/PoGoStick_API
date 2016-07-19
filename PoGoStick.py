@@ -8,6 +8,7 @@ import platform
 from getpass import getpass
 
 # Project Imports
+import api
 import auth
 
 
@@ -41,6 +42,7 @@ def main():
         args.password = getpass("Password: ")
 
     access_token = auth.authenticate(args.username, args.password, args.auth)
+    api.get_api_endpoint(access_token)
 
 
 if __name__ == '__main__':

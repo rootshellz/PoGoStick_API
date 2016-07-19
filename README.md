@@ -3,6 +3,7 @@ Pokémon GO API in Python
 
 # Working Features:
 - Login with Pokemon Trainer or Google account
+- Retrieve API endpoint
 
 
 # To-Do:
@@ -23,6 +24,14 @@ Pokémon GO API in Python
 
 # Requirements:
 - Python 2.7 (on Windows, Linux, or OSX - all others: YMMV)
+
+
+# Output Key:
+- [.] = Notice
+- [!] = Warning
+- [*] = Error / Fatal
+- [+] = Debug
+- [-] = ...
 
 
 # Credits:
