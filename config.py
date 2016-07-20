@@ -24,4 +24,5 @@ client_UA = "Niantic App"
 #####################################
 # Updated by API (leave at defaults):
 account_type = None
+access_token = None
 api_endpoint = None

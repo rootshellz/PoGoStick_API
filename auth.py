@@ -31,7 +31,7 @@ def authenticate(username, password, auth_type):
     if access_token:
         print("[.] Successfully logged in with your %s account" % auth_type)
         config.account_type = auth_type.lower()
-        return access_token
+        config.access_token = access_token
     else:
         print("[*] Could not log in with %s account: %s.  Check username and password.\n" % (auth_type, username))
         sys.exit(-1)

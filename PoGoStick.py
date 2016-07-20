@@ -10,6 +10,7 @@ from getpass import getpass
 # Project Imports
 import api
 import auth
+import actions
 
 
 def main():
@@ -41,8 +42,10 @@ def main():
     if not args.password:
         args.password = getpass("Password: ")
 
-    access_token = auth.authenticate(args.username, args.password, args.auth)
-    api.get_api_endpoint(access_token)
+    # Begin Flow
+    auth.authenticate(args.username, args.password, args.auth)
+    api.get_api_endpoint()
+    actions.enumerate_profile()
 
 
 if __name__ == '__main__':

@@ -9,7 +9,7 @@ from session import session
 api_url = 'https://pgorelease.nianticlabs.com/plfe/rpc'
 
 
-def api_call(api_endpoint, access_token, api_requests):
+def api_call(api_endpoint, api_requests):
     try:
         request_envelope = public_proto_pb2.RequestEnvelope()
         request_envelope.unknown1 = 2
@@ -24,7 +24,7 @@ def api_call(api_endpoint, access_token, api_requests):
         request_envelope.unknown12 = 989
 
         request_envelope.auth.provider = config.account_type
-        request_envelope.auth.token.contents = access_token
+        request_envelope.auth.token.contents = config.access_token
         # TODO: What should this value be?
         request_envelope.auth.token.unknown13 = 59
 
@@ -43,7 +43,7 @@ def api_call(api_endpoint, access_token, api_requests):
         return None
 
 
-def get_api_endpoint(access_token):
+def get_api_endpoint():
     request_envelope = public_proto_pb2.RequestEnvelope()
 
     request1 = request_envelope.requests.add()
@@ -61,7 +61,7 @@ def get_api_endpoint(access_token):
     request5 = request_envelope.requests.add()
     request5.type = 5
 
-    api_response = api_call(api_url, access_token, request_envelope.requests)
+    api_response = api_call(api_url, request_envelope.requests)
 
     try:
         config.api_endpoint = "https://%s/rpc" % api_response.api_url
@@ -72,3 +72,20 @@ def get_api_endpoint(access_token):
         sys.exit(-1)
 
     print("[.] API Endpoint: %s" % config.api_endpoint)
+
+
+def get_profile():
+    request_envelope = public_proto_pb2.RequestEnvelope()
+
+    request1 = request_envelope.requests.add()
+    request1.type = 2
+
+    api_response = api_call(config.api_endpoint, request_envelope.requests)
+
+    if api_response:
+        return api_response
+    else:
+        if config.debug:
+            print("[+] Failed to retrieve profile", error)
+        print("[*] Failed to retrieve profile\n")
+        sys.exit(-1)
