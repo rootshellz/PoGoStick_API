@@ -1,100 +1,118 @@
+// Client Request
 message RequestEnvelope {
-  required int32 unknown1 = 1;
-  optional int64 rpc_id = 3;
-  repeated Requests requests = 4;
-  optional Unknown6 unknown6 = 6;
-  optional fixed64 latitude = 7;
-  optional fixed64 longitude = 8;
-  optional fixed64 altitude = 9;
-  optional AuthInfo auth = 10;
-  optional int64 unknown12 = 12;
-
-  message Requests {
-    required int32 type = 1;
-    optional Unknown3 message = 2;
-  }
-
-  message Unknown3 {
-    required string unknown4 = 1;
-  }
-
-  message Unknown6 {
     required int32 unknown1 = 1;
-    required Unknown2 unknown2 = 2;
+    optional int64 rpc_id = 3;
+    repeated Requests requests = 4;
+    optional Unknown6 unknown6 = 6;
+    optional fixed64 latitude = 7;
+    optional fixed64 longitude = 8;
+    optional fixed64 altitude = 9;
+    optional AuthInfo auth = 10;
+    optional int64 unknown12 = 12;
 
-    message Unknown2 {
-      required bytes unknown1 = 1;
+    message Requests {
+        required int32 type = 1;
+        optional Unknown3 message = 2;
     }
 
-  }
-  message AuthInfo {
-    required string provider = 1;
-    required JWT token = 2;
-
-    message JWT {
-      required string contents = 1;
-      required int32 unknown13  = 2;
+    message Unknown3 {
+        required string unknown4 = 1;
     }
-  }
+
+    message Unknown6 {
+        required int32 unknown1 = 1;
+        required Unknown2 unknown2 = 2;
+
+        message Unknown2 {
+        required bytes unknown1 = 1;
+        }
+    }
+
+    message AuthInfo {
+        required string provider = 1;
+        required JWT token = 2;
+
+        message JWT {
+            required string contents = 1;
+            required int32 unknown13  = 2;
+        }
+    }
 }
 
+
+// Server Response
 message ResponseEnvelope {
-  required int32 unknown1 = 1;
-  optional int64 rpc_id = 2;
-  optional string api_url = 3;
-  optional Unknown6 unknown6 = 6;
-  optional Unknown7 unknown7 = 7;
-  repeated Payload payload = 100;
-
-  message Unknown6 {
     required int32 unknown1 = 1;
-    required Unknown2 unknown2 = 2;
+    optional int64 rpc_id = 2;
+    optional string api_url = 3;
+    optional Unknown6 unknown6 = 6;
+    optional Unknown7 unknown7 = 7;
+    repeated Payload payload = 100;
 
-    message Unknown2 {
-      required bytes unknown1 = 1;
+    message Unknown6 {
+        required int32 unknown6_1 = 1;
+        required Unknown6_2 unknown6_2 = 2;
+
+        message Unknown6_2 {
+            required bytes unknown6_2_1 = 1;
+         }
     }
 
-  }
-
-  message Unknown7 {
-    optional bytes unknown71 = 1;
-    optional int64 unknown72 = 2;
-    optional bytes unknown73 = 3;
-  }
-
-  message Payload {
-    required int32 unknown1 = 1;
-    optional Profile profile = 2;
-  }
-
-  message Profile {
-    required int64 creation_time = 1;
-    optional string username = 2;
-    optional int32 team = 5;
-    optional bytes tutorial = 7; 
-    optional AvatarDetails avatar = 8; 
-    optional int32 poke_storage = 9;
-    optional int32 item_storage = 10;
-    optional DailyBonus daily_bonus = 11;
-    optional bytes unknown12 = 12;
-    optional bytes unknown13 = 13;
-    repeated Currency currency = 14;
-
-    message AvatarDetails {
-      optional int32 unknown2 = 2;
-      optional int32 unknown3 = 3;
-      optional int32 unknown9 = 9;
-      optional int32 unknown10 = 10;
+    message Unknown7 {
+        optional bytes unknown7_1 = 1;
+        optional int64 unknown7_2 = 2;
+        optional bytes unknown7_3 = 3;
     }
 
-    message DailyBonus {
-      optional int64 NextCollectTimestampMs = 1;
-      optional int64 NextDefenderBonusCollectTimestampMs = 2;
+    message Payload {
+        required int32 unknown1 = 1;
+        optional Profile profile = 2;
     }
 
-    message Currency {
-      required string type = 1;
-      optional int32 amount = 2;
+    message Profile {
+        required int64 creation_time = 1;
+        optional string username = 2;
+        optional int32 team = 5;
+        optional bytes tutorial = 7;
+        optional AvatarDetails avatar = 8;
+        optional int32 max_poke_storage = 9;
+        optional int32 max_item_storage = 10;
+        optional DailyBonus daily_bonus = 11;
+        optional EquippedBadge equipped_badge = 12;
+        optional ContactSettings contact_settings = 13;
+        repeated Currency currency = 14;
+
+        message AvatarDetails {
+            optional int32 skin = 2;
+            optional int32 hair = 3;
+            optional int32 shirt = 4;
+            optional int32 pants = 5;
+            optional int32 hat = 6;
+            optional int32 shoes = 7;
+            optional int32 avatar = 8;
+            optional int32 eyes = 9;
+            optional int32 backpack = 10;
+        }
+
+        message DailyBonus {
+            optional int64 next_collect_timestamp_ms = 1;
+            optional int64 next_defender_bonus_collect_timestamp_ms = 2;
+        }
+
+        message EquippedBadge {
+            optional int32 equipped_badge = 1;
+            optional int32 level = 2;
+            optional int64 next_equip_change_allowed_timestamp_ms = 3;
+        }
+
+        message ContactSettings {
+            optional bool send_marketing_emails = 1;
+            optional bool send_push_notifications = 2;
+        }
+
+        message Currency {
+            required string type = 1;
+            optional int32 amount = 2;
+        }
     }
-  }
 }

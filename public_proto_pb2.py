@@ -18,7 +18,7 @@ _sym_db = _symbol_database.Default()
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='public_proto.proto',
   package='',
-  serialized_pb=_b('\n\x12public_proto.proto\"\xce\x04\n\x0fRequestEnvelope\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x0e\n\x06rpc_id\x18\x03 \x01(\x03\x12+\n\x08requests\x18\x04 \x03(\x0b\x32\x19.RequestEnvelope.Requests\x12+\n\x08unknown6\x18\x06 \x01(\x0b\x32\x19.RequestEnvelope.Unknown6\x12\x10\n\x08latitude\x18\x07 \x01(\x06\x12\x11\n\tlongitude\x18\x08 \x01(\x06\x12\x10\n\x08\x61ltitude\x18\t \x01(\x06\x12\'\n\x04\x61uth\x18\n \x01(\x0b\x32\x19.RequestEnvelope.AuthInfo\x12\x11\n\tunknown12\x18\x0c \x01(\x03\x1a\x44\n\x08Requests\x12\x0c\n\x04type\x18\x01 \x02(\x05\x12*\n\x07message\x18\x02 \x01(\x0b\x32\x19.RequestEnvelope.Unknown3\x1a\x1c\n\x08Unknown3\x12\x10\n\x08unknown4\x18\x01 \x02(\t\x1ap\n\x08Unknown6\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x34\n\x08unknown2\x18\x02 \x02(\x0b\x32\".RequestEnvelope.Unknown6.Unknown2\x1a\x1c\n\x08Unknown2\x12\x10\n\x08unknown1\x18\x01 \x02(\x0c\x1av\n\x08\x41uthInfo\x12\x10\n\x08provider\x18\x01 \x02(\t\x12,\n\x05token\x18\x02 \x02(\x0b\x32\x1d.RequestEnvelope.AuthInfo.JWT\x1a*\n\x03JWT\x12\x10\n\x08\x63ontents\x18\x01 \x02(\t\x12\x11\n\tunknown13\x18\x02 \x02(\x05\"\xfe\x07\n\x10ResponseEnvelope\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x0e\n\x06rpc_id\x18\x02 \x01(\x03\x12\x0f\n\x07\x61pi_url\x18\x03 \x01(\t\x12,\n\x08unknown6\x18\x06 \x01(\x0b\x32\x1a.ResponseEnvelope.Unknown6\x12,\n\x08unknown7\x18\x07 \x01(\x0b\x32\x1a.ResponseEnvelope.Unknown7\x12*\n\x07payload\x18\x64 \x03(\x0b\x32\x19.ResponseEnvelope.Payload\x1aq\n\x08Unknown6\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x35\n\x08unknown2\x18\x02 \x02(\x0b\x32#.ResponseEnvelope.Unknown6.Unknown2\x1a\x1c\n\x08Unknown2\x12\x10\n\x08unknown1\x18\x01 \x02(\x0c\x1a\x43\n\x08Unknown7\x12\x11\n\tunknown71\x18\x01 \x01(\x0c\x12\x11\n\tunknown72\x18\x02 \x01(\x03\x12\x11\n\tunknown73\x18\x03 \x01(\x0c\x1aG\n\x07Payload\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12*\n\x07profile\x18\x02 \x01(\x0b\x32\x19.ResponseEnvelope.Profile\x1a\xad\x04\n\x07Profile\x12\x15\n\rcreation_time\x18\x01 \x02(\x03\x12\x10\n\x08username\x18\x02 \x01(\t\x12\x0c\n\x04team\x18\x05 \x01(\x05\x12\x10\n\x08tutorial\x18\x07 \x01(\x0c\x12\x37\n\x06\x61vatar\x18\x08 \x01(\x0b\x32\'.ResponseEnvelope.Profile.AvatarDetails\x12\x14\n\x0cpoke_storage\x18\t \x01(\x05\x12\x14\n\x0citem_storage\x18\n \x01(\x05\x12\x39\n\x0b\x64\x61ily_bonus\x18\x0b \x01(\x0b\x32$.ResponseEnvelope.Profile.DailyBonus\x12\x11\n\tunknown12\x18\x0c \x01(\x0c\x12\x11\n\tunknown13\x18\r \x01(\x0c\x12\x34\n\x08\x63urrency\x18\x0e \x03(\x0b\x32\".ResponseEnvelope.Profile.Currency\x1aX\n\rAvatarDetails\x12\x10\n\x08unknown2\x18\x02 \x01(\x05\x12\x10\n\x08unknown3\x18\x03 \x01(\x05\x12\x10\n\x08unknown9\x18\t \x01(\x05\x12\x11\n\tunknown10\x18\n \x01(\x05\x1aY\n\nDailyBonus\x12\x1e\n\x16NextCollectTimestampMs\x18\x01 \x01(\x03\x12+\n#NextDefenderBonusCollectTimestampMs\x18\x02 \x01(\x03\x1a(\n\x08\x43urrency\x12\x0c\n\x04type\x18\x01 \x02(\t\x12\x0e\n\x06\x61mount\x18\x02 \x01(\x05')
+  serialized_pb=_b('\n\x12public_proto.proto\"\xce\x04\n\x0fRequestEnvelope\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x0e\n\x06rpc_id\x18\x03 \x01(\x03\x12+\n\x08requests\x18\x04 \x03(\x0b\x32\x19.RequestEnvelope.Requests\x12+\n\x08unknown6\x18\x06 \x01(\x0b\x32\x19.RequestEnvelope.Unknown6\x12\x10\n\x08latitude\x18\x07 \x01(\x06\x12\x11\n\tlongitude\x18\x08 \x01(\x06\x12\x10\n\x08\x61ltitude\x18\t \x01(\x06\x12\'\n\x04\x61uth\x18\n \x01(\x0b\x32\x19.RequestEnvelope.AuthInfo\x12\x11\n\tunknown12\x18\x0c \x01(\x03\x1a\x44\n\x08Requests\x12\x0c\n\x04type\x18\x01 \x02(\x05\x12*\n\x07message\x18\x02 \x01(\x0b\x32\x19.RequestEnvelope.Unknown3\x1a\x1c\n\x08Unknown3\x12\x10\n\x08unknown4\x18\x01 \x02(\t\x1ap\n\x08Unknown6\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x34\n\x08unknown2\x18\x02 \x02(\x0b\x32\".RequestEnvelope.Unknown6.Unknown2\x1a\x1c\n\x08Unknown2\x12\x10\n\x08unknown1\x18\x01 \x02(\x0c\x1av\n\x08\x41uthInfo\x12\x10\n\x08provider\x18\x01 \x02(\t\x12,\n\x05token\x18\x02 \x02(\x0b\x32\x1d.RequestEnvelope.AuthInfo.JWT\x1a*\n\x03JWT\x12\x10\n\x08\x63ontents\x18\x01 \x02(\t\x12\x11\n\tunknown13\x18\x02 \x02(\x05\"\xf6\n\n\x10ResponseEnvelope\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12\x0e\n\x06rpc_id\x18\x02 \x01(\x03\x12\x0f\n\x07\x61pi_url\x18\x03 \x01(\t\x12,\n\x08unknown6\x18\x06 \x01(\x0b\x32\x1a.ResponseEnvelope.Unknown6\x12,\n\x08unknown7\x18\x07 \x01(\x0b\x32\x1a.ResponseEnvelope.Unknown7\x12*\n\x07payload\x18\x64 \x03(\x0b\x32\x19.ResponseEnvelope.Payload\x1a}\n\x08Unknown6\x12\x12\n\nunknown6_1\x18\x01 \x02(\x05\x12\x39\n\nunknown6_2\x18\x02 \x02(\x0b\x32%.ResponseEnvelope.Unknown6.Unknown6_2\x1a\"\n\nUnknown6_2\x12\x14\n\x0cunknown6_2_1\x18\x01 \x02(\x0c\x1a\x46\n\x08Unknown7\x12\x12\n\nunknown7_1\x18\x01 \x01(\x0c\x12\x12\n\nunknown7_2\x18\x02 \x01(\x03\x12\x12\n\nunknown7_3\x18\x03 \x01(\x0c\x1aG\n\x07Payload\x12\x10\n\x08unknown1\x18\x01 \x02(\x05\x12*\n\x07profile\x18\x02 \x01(\x0b\x32\x19.ResponseEnvelope.Profile\x1a\x96\x07\n\x07Profile\x12\x15\n\rcreation_time\x18\x01 \x02(\x03\x12\x10\n\x08username\x18\x02 \x01(\t\x12\x0c\n\x04team\x18\x05 \x01(\x05\x12\x10\n\x08tutorial\x18\x07 \x01(\x0c\x12\x37\n\x06\x61vatar\x18\x08 \x01(\x0b\x32\'.ResponseEnvelope.Profile.AvatarDetails\x12\x18\n\x10max_poke_storage\x18\t \x01(\x05\x12\x18\n\x10max_item_storage\x18\n \x01(\x05\x12\x39\n\x0b\x64\x61ily_bonus\x18\x0b \x01(\x0b\x32$.ResponseEnvelope.Profile.DailyBonus\x12?\n\x0e\x65quipped_badge\x18\x0c \x01(\x0b\x32\'.ResponseEnvelope.Profile.EquippedBadge\x12\x43\n\x10\x63ontact_settings\x18\r \x01(\x0b\x32).ResponseEnvelope.Profile.ContactSettings\x12\x34\n\x08\x63urrency\x18\x0e \x03(\x0b\x32\".ResponseEnvelope.Profile.Currency\x1a\x95\x01\n\rAvatarDetails\x12\x0c\n\x04skin\x18\x02 \x01(\x05\x12\x0c\n\x04hair\x18\x03 \x01(\x05\x12\r\n\x05shirt\x18\x04 \x01(\x05\x12\r\n\x05pants\x18\x05 \x01(\x05\x12\x0b\n\x03hat\x18\x06 \x01(\x05\x12\r\n\x05shoes\x18\x07 \x01(\x05\x12\x0e\n\x06\x61vatar\x18\x08 \x01(\x05\x12\x0c\n\x04\x65yes\x18\t \x01(\x05\x12\x10\n\x08\x62\x61\x63kpack\x18\n \x01(\x05\x1a\x61\n\nDailyBonus\x12!\n\x19next_collect_timestamp_ms\x18\x01 \x01(\x03\x12\x30\n(next_defender_bonus_collect_timestamp_ms\x18\x02 \x01(\x03\x1a\x66\n\rEquippedBadge\x12\x16\n\x0e\x65quipped_badge\x18\x01 \x01(\x05\x12\r\n\x05level\x18\x02 \x01(\x05\x12.\n&next_equip_change_allowed_timestamp_ms\x18\x03 \x01(\x03\x1aQ\n\x0f\x43ontactSettings\x12\x1d\n\x15send_marketing_emails\x18\x01 \x01(\x08\x12\x1f\n\x17send_push_notifications\x18\x02 \x01(\x08\x1a(\n\x08\x43urrency\x12\x0c\n\x04type\x18\x01 \x02(\t\x12\x0e\n\x06\x61mount\x18\x02 \x01(\x05')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -313,15 +313,15 @@ _REQUESTENVELOPE = _descriptor.Descriptor(
 )
 
 
-_RESPONSEENVELOPE_UNKNOWN6_UNKNOWN2 = _descriptor.Descriptor(
-  name='Unknown2',
-  full_name='ResponseEnvelope.Unknown6.Unknown2',
+_RESPONSEENVELOPE_UNKNOWN6_UNKNOWN6_2 = _descriptor.Descriptor(
+  name='Unknown6_2',
+  full_name='ResponseEnvelope.Unknown6.Unknown6_2',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='unknown1', full_name='ResponseEnvelope.Unknown6.Unknown2.unknown1', index=0,
+      name='unknown6_2_1', full_name='ResponseEnvelope.Unknown6.Unknown6_2.unknown6_2_1', index=0,
       number=1, type=12, cpp_type=9, label=2,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
@@ -338,8 +338,8 @@ _RESPONSEENVELOPE_UNKNOWN6_UNKNOWN2 = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=465,
-  serialized_end=493,
+  serialized_start=914,
+  serialized_end=948,
 )
 
 _RESPONSEENVELOPE_UNKNOWN6 = _descriptor.Descriptor(
@@ -350,14 +350,14 @@ _RESPONSEENVELOPE_UNKNOWN6 = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='unknown1', full_name='ResponseEnvelope.Unknown6.unknown1', index=0,
+      name='unknown6_1', full_name='ResponseEnvelope.Unknown6.unknown6_1', index=0,
       number=1, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='unknown2', full_name='ResponseEnvelope.Unknown6.unknown2', index=1,
+      name='unknown6_2', full_name='ResponseEnvelope.Unknown6.unknown6_2', index=1,
       number=2, type=11, cpp_type=10, label=2,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -366,7 +366,7 @@ _RESPONSEENVELOPE_UNKNOWN6 = _descriptor.Descriptor(
   ],
   extensions=[
   ],
-  nested_types=[_RESPONSEENVELOPE_UNKNOWN6_UNKNOWN2, ],
+  nested_types=[_RESPONSEENVELOPE_UNKNOWN6_UNKNOWN6_2, ],
   enum_types=[
   ],
   options=None,
@@ -375,7 +375,7 @@ _RESPONSEENVELOPE_UNKNOWN6 = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=823,
-  serialized_end=936,
+  serialized_end=948,
 )
 
 _RESPONSEENVELOPE_UNKNOWN7 = _descriptor.Descriptor(
@@ -386,21 +386,21 @@ _RESPONSEENVELOPE_UNKNOWN7 = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='unknown71', full_name='ResponseEnvelope.Unknown7.unknown71', index=0,
+      name='unknown7_1', full_name='ResponseEnvelope.Unknown7.unknown7_1', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='unknown72', full_name='ResponseEnvelope.Unknown7.unknown72', index=1,
+      name='unknown7_2', full_name='ResponseEnvelope.Unknown7.unknown7_2', index=1,
       number=2, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='unknown73', full_name='ResponseEnvelope.Unknown7.unknown73', index=2,
+      name='unknown7_3', full_name='ResponseEnvelope.Unknown7.unknown7_3', index=2,
       number=3, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
@@ -417,8 +417,8 @@ _RESPONSEENVELOPE_UNKNOWN7 = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=938,
-  serialized_end=1005,
+  serialized_start=950,
+  serialized_end=1020,
 )
 
 _RESPONSEENVELOPE_PAYLOAD = _descriptor.Descriptor(
@@ -453,8 +453,8 @@ _RESPONSEENVELOPE_PAYLOAD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1007,
-  serialized_end=1078,
+  serialized_start=1022,
+  serialized_end=1093,
 )
 
 _RESPONSEENVELOPE_PROFILE_AVATARDETAILS = _descriptor.Descriptor(
@@ -465,28 +465,63 @@ _RESPONSEENVELOPE_PROFILE_AVATARDETAILS = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='unknown2', full_name='ResponseEnvelope.Profile.AvatarDetails.unknown2', index=0,
+      name='skin', full_name='ResponseEnvelope.Profile.AvatarDetails.skin', index=0,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='unknown3', full_name='ResponseEnvelope.Profile.AvatarDetails.unknown3', index=1,
+      name='hair', full_name='ResponseEnvelope.Profile.AvatarDetails.hair', index=1,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='unknown9', full_name='ResponseEnvelope.Profile.AvatarDetails.unknown9', index=2,
+      name='shirt', full_name='ResponseEnvelope.Profile.AvatarDetails.shirt', index=2,
+      number=4, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='pants', full_name='ResponseEnvelope.Profile.AvatarDetails.pants', index=3,
+      number=5, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='hat', full_name='ResponseEnvelope.Profile.AvatarDetails.hat', index=4,
+      number=6, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='shoes', full_name='ResponseEnvelope.Profile.AvatarDetails.shoes', index=5,
+      number=7, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='avatar', full_name='ResponseEnvelope.Profile.AvatarDetails.avatar', index=6,
+      number=8, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='eyes', full_name='ResponseEnvelope.Profile.AvatarDetails.eyes', index=7,
       number=9, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='unknown10', full_name='ResponseEnvelope.Profile.AvatarDetails.unknown10', index=3,
+      name='backpack', full_name='ResponseEnvelope.Profile.AvatarDetails.backpack', index=8,
       number=10, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -503,8 +538,8 @@ _RESPONSEENVELOPE_PROFILE_AVATARDETAILS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1417,
-  serialized_end=1505,
+  serialized_start=1537,
+  serialized_end=1686,
 )
 
 _RESPONSEENVELOPE_PROFILE_DAILYBONUS = _descriptor.Descriptor(
@@ -515,14 +550,14 @@ _RESPONSEENVELOPE_PROFILE_DAILYBONUS = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='NextCollectTimestampMs', full_name='ResponseEnvelope.Profile.DailyBonus.NextCollectTimestampMs', index=0,
+      name='next_collect_timestamp_ms', full_name='ResponseEnvelope.Profile.DailyBonus.next_collect_timestamp_ms', index=0,
       number=1, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='NextDefenderBonusCollectTimestampMs', full_name='ResponseEnvelope.Profile.DailyBonus.NextDefenderBonusCollectTimestampMs', index=1,
+      name='next_defender_bonus_collect_timestamp_ms', full_name='ResponseEnvelope.Profile.DailyBonus.next_defender_bonus_collect_timestamp_ms', index=1,
       number=2, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -539,8 +574,87 @@ _RESPONSEENVELOPE_PROFILE_DAILYBONUS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1507,
-  serialized_end=1596,
+  serialized_start=1688,
+  serialized_end=1785,
+)
+
+_RESPONSEENVELOPE_PROFILE_EQUIPPEDBADGE = _descriptor.Descriptor(
+  name='EquippedBadge',
+  full_name='ResponseEnvelope.Profile.EquippedBadge',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='equipped_badge', full_name='ResponseEnvelope.Profile.EquippedBadge.equipped_badge', index=0,
+      number=1, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='level', full_name='ResponseEnvelope.Profile.EquippedBadge.level', index=1,
+      number=2, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='next_equip_change_allowed_timestamp_ms', full_name='ResponseEnvelope.Profile.EquippedBadge.next_equip_change_allowed_timestamp_ms', index=2,
+      number=3, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1787,
+  serialized_end=1889,
+)
+
+_RESPONSEENVELOPE_PROFILE_CONTACTSETTINGS = _descriptor.Descriptor(
+  name='ContactSettings',
+  full_name='ResponseEnvelope.Profile.ContactSettings',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='send_marketing_emails', full_name='ResponseEnvelope.Profile.ContactSettings.send_marketing_emails', index=0,
+      number=1, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='send_push_notifications', full_name='ResponseEnvelope.Profile.ContactSettings.send_push_notifications', index=1,
+      number=2, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1891,
+  serialized_end=1972,
 )
 
 _RESPONSEENVELOPE_PROFILE_CURRENCY = _descriptor.Descriptor(
@@ -575,8 +689,8 @@ _RESPONSEENVELOPE_PROFILE_CURRENCY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1598,
-  serialized_end=1638,
+  serialized_start=1974,
+  serialized_end=2014,
 )
 
 _RESPONSEENVELOPE_PROFILE = _descriptor.Descriptor(
@@ -622,14 +736,14 @@ _RESPONSEENVELOPE_PROFILE = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='poke_storage', full_name='ResponseEnvelope.Profile.poke_storage', index=5,
+      name='max_poke_storage', full_name='ResponseEnvelope.Profile.max_poke_storage', index=5,
       number=9, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='item_storage', full_name='ResponseEnvelope.Profile.item_storage', index=6,
+      name='max_item_storage', full_name='ResponseEnvelope.Profile.max_item_storage', index=6,
       number=10, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -643,16 +757,16 @@ _RESPONSEENVELOPE_PROFILE = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='unknown12', full_name='ResponseEnvelope.Profile.unknown12', index=8,
-      number=12, type=12, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b(""),
+      name='equipped_badge', full_name='ResponseEnvelope.Profile.equipped_badge', index=8,
+      number=12, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='unknown13', full_name='ResponseEnvelope.Profile.unknown13', index=9,
-      number=13, type=12, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b(""),
+      name='contact_settings', full_name='ResponseEnvelope.Profile.contact_settings', index=9,
+      number=13, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -666,7 +780,7 @@ _RESPONSEENVELOPE_PROFILE = _descriptor.Descriptor(
   ],
   extensions=[
   ],
-  nested_types=[_RESPONSEENVELOPE_PROFILE_AVATARDETAILS, _RESPONSEENVELOPE_PROFILE_DAILYBONUS, _RESPONSEENVELOPE_PROFILE_CURRENCY, ],
+  nested_types=[_RESPONSEENVELOPE_PROFILE_AVATARDETAILS, _RESPONSEENVELOPE_PROFILE_DAILYBONUS, _RESPONSEENVELOPE_PROFILE_EQUIPPEDBADGE, _RESPONSEENVELOPE_PROFILE_CONTACTSETTINGS, _RESPONSEENVELOPE_PROFILE_CURRENCY, ],
   enum_types=[
   ],
   options=None,
@@ -674,8 +788,8 @@ _RESPONSEENVELOPE_PROFILE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1081,
-  serialized_end=1638,
+  serialized_start=1096,
+  serialized_end=2014,
 )
 
 _RESPONSEENVELOPE = _descriptor.Descriptor(
@@ -739,7 +853,7 @@ _RESPONSEENVELOPE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=616,
-  serialized_end=1638,
+  serialized_end=2014,
 )
 
 _REQUESTENVELOPE_REQUESTS.fields_by_name['message'].message_type = _REQUESTENVELOPE_UNKNOWN3
@@ -754,17 +868,21 @@ _REQUESTENVELOPE_AUTHINFO.containing_type = _REQUESTENVELOPE
 _REQUESTENVELOPE.fields_by_name['requests'].message_type = _REQUESTENVELOPE_REQUESTS
 _REQUESTENVELOPE.fields_by_name['unknown6'].message_type = _REQUESTENVELOPE_UNKNOWN6
 _REQUESTENVELOPE.fields_by_name['auth'].message_type = _REQUESTENVELOPE_AUTHINFO
-_RESPONSEENVELOPE_UNKNOWN6_UNKNOWN2.containing_type = _RESPONSEENVELOPE_UNKNOWN6
-_RESPONSEENVELOPE_UNKNOWN6.fields_by_name['unknown2'].message_type = _RESPONSEENVELOPE_UNKNOWN6_UNKNOWN2
+_RESPONSEENVELOPE_UNKNOWN6_UNKNOWN6_2.containing_type = _RESPONSEENVELOPE_UNKNOWN6
+_RESPONSEENVELOPE_UNKNOWN6.fields_by_name['unknown6_2'].message_type = _RESPONSEENVELOPE_UNKNOWN6_UNKNOWN6_2
 _RESPONSEENVELOPE_UNKNOWN6.containing_type = _RESPONSEENVELOPE
 _RESPONSEENVELOPE_UNKNOWN7.containing_type = _RESPONSEENVELOPE
 _RESPONSEENVELOPE_PAYLOAD.fields_by_name['profile'].message_type = _RESPONSEENVELOPE_PROFILE
 _RESPONSEENVELOPE_PAYLOAD.containing_type = _RESPONSEENVELOPE
 _RESPONSEENVELOPE_PROFILE_AVATARDETAILS.containing_type = _RESPONSEENVELOPE_PROFILE
 _RESPONSEENVELOPE_PROFILE_DAILYBONUS.containing_type = _RESPONSEENVELOPE_PROFILE
+_RESPONSEENVELOPE_PROFILE_EQUIPPEDBADGE.containing_type = _RESPONSEENVELOPE_PROFILE
+_RESPONSEENVELOPE_PROFILE_CONTACTSETTINGS.containing_type = _RESPONSEENVELOPE_PROFILE
 _RESPONSEENVELOPE_PROFILE_CURRENCY.containing_type = _RESPONSEENVELOPE_PROFILE
 _RESPONSEENVELOPE_PROFILE.fields_by_name['avatar'].message_type = _RESPONSEENVELOPE_PROFILE_AVATARDETAILS
 _RESPONSEENVELOPE_PROFILE.fields_by_name['daily_bonus'].message_type = _RESPONSEENVELOPE_PROFILE_DAILYBONUS
+_RESPONSEENVELOPE_PROFILE.fields_by_name['equipped_badge'].message_type = _RESPONSEENVELOPE_PROFILE_EQUIPPEDBADGE
+_RESPONSEENVELOPE_PROFILE.fields_by_name['contact_settings'].message_type = _RESPONSEENVELOPE_PROFILE_CONTACTSETTINGS
 _RESPONSEENVELOPE_PROFILE.fields_by_name['currency'].message_type = _RESPONSEENVELOPE_PROFILE_CURRENCY
 _RESPONSEENVELOPE_PROFILE.containing_type = _RESPONSEENVELOPE
 _RESPONSEENVELOPE.fields_by_name['unknown6'].message_type = _RESPONSEENVELOPE_UNKNOWN6
@@ -832,10 +950,10 @@ ResponseEnvelope = _reflection.GeneratedProtocolMessageType('ResponseEnvelope', 
 
   Unknown6 = _reflection.GeneratedProtocolMessageType('Unknown6', (_message.Message,), dict(
 
-    Unknown2 = _reflection.GeneratedProtocolMessageType('Unknown2', (_message.Message,), dict(
-      DESCRIPTOR = _RESPONSEENVELOPE_UNKNOWN6_UNKNOWN2,
+    Unknown6_2 = _reflection.GeneratedProtocolMessageType('Unknown6_2', (_message.Message,), dict(
+      DESCRIPTOR = _RESPONSEENVELOPE_UNKNOWN6_UNKNOWN6_2,
       __module__ = 'public_proto_pb2'
-      # @@protoc_insertion_point(class_scope:ResponseEnvelope.Unknown6.Unknown2)
+      # @@protoc_insertion_point(class_scope:ResponseEnvelope.Unknown6.Unknown6_2)
       ))
     ,
     DESCRIPTOR = _RESPONSEENVELOPE_UNKNOWN6,
@@ -874,6 +992,20 @@ ResponseEnvelope = _reflection.GeneratedProtocolMessageType('ResponseEnvelope', 
       ))
     ,
 
+    EquippedBadge = _reflection.GeneratedProtocolMessageType('EquippedBadge', (_message.Message,), dict(
+      DESCRIPTOR = _RESPONSEENVELOPE_PROFILE_EQUIPPEDBADGE,
+      __module__ = 'public_proto_pb2'
+      # @@protoc_insertion_point(class_scope:ResponseEnvelope.Profile.EquippedBadge)
+      ))
+    ,
+
+    ContactSettings = _reflection.GeneratedProtocolMessageType('ContactSettings', (_message.Message,), dict(
+      DESCRIPTOR = _RESPONSEENVELOPE_PROFILE_CONTACTSETTINGS,
+      __module__ = 'public_proto_pb2'
+      # @@protoc_insertion_point(class_scope:ResponseEnvelope.Profile.ContactSettings)
+      ))
+    ,
+
     Currency = _reflection.GeneratedProtocolMessageType('Currency', (_message.Message,), dict(
       DESCRIPTOR = _RESPONSEENVELOPE_PROFILE_CURRENCY,
       __module__ = 'public_proto_pb2'
@@ -891,12 +1023,14 @@ ResponseEnvelope = _reflection.GeneratedProtocolMessageType('ResponseEnvelope', 
   ))
 _sym_db.RegisterMessage(ResponseEnvelope)
 _sym_db.RegisterMessage(ResponseEnvelope.Unknown6)
-_sym_db.RegisterMessage(ResponseEnvelope.Unknown6.Unknown2)
+_sym_db.RegisterMessage(ResponseEnvelope.Unknown6.Unknown6_2)
 _sym_db.RegisterMessage(ResponseEnvelope.Unknown7)
 _sym_db.RegisterMessage(ResponseEnvelope.Payload)
 _sym_db.RegisterMessage(ResponseEnvelope.Profile)
 _sym_db.RegisterMessage(ResponseEnvelope.Profile.AvatarDetails)
 _sym_db.RegisterMessage(ResponseEnvelope.Profile.DailyBonus)
+_sym_db.RegisterMessage(ResponseEnvelope.Profile.EquippedBadge)
+_sym_db.RegisterMessage(ResponseEnvelope.Profile.ContactSettings)
 _sym_db.RegisterMessage(ResponseEnvelope.Profile.Currency)
 
 

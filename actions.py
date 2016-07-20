@@ -16,8 +16,8 @@ def enumerate_profile():
     # username = profile.username
     # tutorial = profile.tutorial
     # avatar = profile.avatar
-    # poke_storage = profile.poke_storage
-    # item_storage = profile.item_storage
+    # poke_storage = profile.max_poke_storage
+    # item_storage = profile.max_item_storage
     # daily_bonus = profile.daily_bonus
     # unknown12 = profile.unknown12
     # unknown13 = profile.unknown13
@@ -27,7 +27,7 @@ def enumerate_profile():
     print("    [.] Username: %s" % profile.username)
     start_date = datetime.fromtimestamp(int(profile.creation_time)/1000)
     print("    [.] Start Date: %s" % start_date.strftime('%Y-%m-%d %H:%M:%S'))
-    print("    [.] Pokemon Storage: %s" % profile.poke_storage)
-    print("    [.] Item Storage: %s" % profile.item_storage)
+    print("    [.] Pokemon Storage: %s" % profile.max_poke_storage)
+    print("    [.] Item Storage: %s" % profile.max_item_storage)
     print("    [.] Pokecoins: %s" % profile.currency[0].amount)
     print("    [.] Stardust: %s" % profile.currency[1].amount)
