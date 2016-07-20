@@ -3,8 +3,6 @@ from datetime import datetime
 
 # Project Imports
 import api
-import config
-import public_proto_pb2
 
 
 def enumerate_profile():
