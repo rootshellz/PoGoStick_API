@@ -9,7 +9,7 @@ Pokémon GO API in Python
 # To-Do:
 - [X] Login with Pokemon Trainer account
 - [X] Login with Google
-- [ ] Retrieve and enumerate profile
+- [X] Retrieve and enumerate profile
 - [ ] Run to arbitrary locations
 - [ ] Catch Pokemon
 - [ ] Identify nearby Pokestops
